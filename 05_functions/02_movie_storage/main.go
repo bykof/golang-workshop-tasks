@@ -23,7 +23,7 @@ func PrintMovies(movies ...Movie) {
 	// Your code goes here
 }
 
-func MovieById(id int) (Movie, err) {
+func MovieById(id int) (Movie, error) {
 	// Your Code goes here
 	return Movie{}, fmt.Errorf("movie not found id: %d", id)
 }
