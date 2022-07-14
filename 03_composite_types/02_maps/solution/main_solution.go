@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /*
    Task: Create a map and save the following values:
 
@@ -20,4 +22,16 @@ package main
 */
 func main() {
 	// Your code goes here
+	movies := map[string]int{
+		"The Batman":    2022,
+		"Dune":          2021,
+		"The Godfather": 1972,
+		"Harry Potter and the Philisopher's Stone": 2002,
+	}
+
+	movies["Harry Potter and the Philisopher's Stone"] = 2001
+
+	for key, value := range movies {
+		fmt.Printf("- %s: %d\n", key, value)
+	}
 }
