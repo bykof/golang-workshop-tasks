@@ -23,7 +23,7 @@ func SpanWeek(t time.Time) (time.Time, time.Time) {
 	if t.Weekday() == 0 {
 		startWeek = startWeek.AddDate(0, 0, 1)
 	} else {
-		startWeek = startWeek.AddDate(0, 0, int(t.Weekday())-1)
+		startWeek = startWeek.AddDate(0, 0, -int(t.Weekday())+1)
 	}
 
 	endWeek := startWeek.AddDate(0, 0, 7).Add(-time.Nanosecond)
