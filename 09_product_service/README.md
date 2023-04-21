@@ -5,7 +5,7 @@ Use the gin framework: https://gin-gonic.com/docs/
 
 Copy over your infrastructure result from the task `08_database`.
 
-Now implement the controller in `interfaces/product_controller.go`, where each function of the 
+Now implement the controller in `interfaces/controllers/product_controller.go`, where each function of the 
 product_repository should be exposed as a REST endpoint:
 
 - GET /products -> List()
